@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una guía introductoria sobre el cuidado y tipos de plantas para el hogar.">
+    <title>El Rincón Verde - Guía de Plantas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>🌿 El Rincón Verde</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#tipos">Tipos</a></li>
+                    <li><a href="#cuidados">Cuidados</a></li>
+                    <li><a href="#contacto">Boletín</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Trae vida a tu espacio</h2>
+                <p>Descubre el maravilloso mundo de las plantas de interior y aprende cómo convertirlas en las compañeras perfectas para tu hogar.</p>
+                <img src="https://placehold.co/1200x500/2e7d32/ffffff?text=Imagen+Panoramica+de+Plantas" alt="Colección de plantas de interior en una sala luminosa" class="hero-image">
+            </div>
+        </section>
+
+        <section id="tipos" class="container my-section">
+            <h2>Nuestras Favoritas</h2>
+            <div class="plant-grid">
+                <article class="plant-card">
+                    <img src="https://placehold.co/400x400/81c784/ffffff?text=Suculenta" alt="Pequeña planta suculenta">
+                    <h3>Suculentas</h3>
+                    <p>Ideales para principiantes. Requieren poca agua y mucha luz indirecta.</p>
+                </article>
+                <article class="plant-card">
+                    <img src="https://placehold.co/400x400/66bb6a/ffffff?text=Monstera" alt="Hoja grande de Monstera Deliciosa">
+                    <h3>Monstera Deliciosa</h3>
+                    <p>Famosa por sus hojas fenestradas. Prefiere ambientes húmedos y luz media.</p>
+                </article>
+                <article class="plant-card">
+                    <img src="https://placehold.co/400x400/4caf50/ffffff?text=Helecho" alt="Helecho frondoso colgante">
+                    <h3>Helechos</h3>
+                    <p>Amantes de la humedad y la sombra. Perfectos para baños o cocinas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cuidados" class="container my-section bg-light">
+            <h2>Consejos Básicos de Cuidado</h2>
+            <p>Sigue estas reglas de oro para mantener tus plantas felices:</p>
+            <ol class="care-list">
+                <li><strong>No riegues en exceso:</strong> La causa #1 de muerte vegetal. Toca la tierra antes de regar.</li>
+                <li><strong>La luz es clave:</strong> Conoce las necesidades lumínicas de tu planta (sombra, luz indirecta o sol directo).</li>
+                <li><strong>Drenaje:</strong> Asegúrate de que tus macetas tengan agujeros en la base para que escape el agua.</li>
+                <li><strong>Limpieza:</strong> Limpia el polvo de las hojas para que puedan respirar mejor.</li>
+            </ol>
+        </section>
+
+        <section id="contacto" class="container my-section">
+            <h2>Únete a nuestro Boletín Botánico</h2>
+            <p>Recibe consejos semanales directamente en tu correo.</p>
+            <form id="newsletter-form">
+                <label for="email">Tu correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+            <p id="form-feedback" style="display: none; color: green; font-weight: bold; margin-top: 10px;">¡Gracias por suscribirte!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 El Rincón Verde. Proyecto académico. Ver código en <a href="https://github.com/" target="_blank">GitHub</a>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

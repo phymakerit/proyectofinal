@@ -1,0 +1,207 @@
+/* --- Reset y Variables Globales --- */
+:root {
+    --primary-color: #2e7d32; /* Verde oscuro */
+    --secondary-color: #81c784; /* Verde claro */
+    --accent-color: #f9fbe7; /* Fondo crema claro */
+    --text-dark: #333333;
+    --text-light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--accent-color);
+}
+
+/* --- Clases de Utilidad --- */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.my-section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* --- Header y Navegación --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky; /* La barra se queda fija al hacer scroll */
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* --- Secciones Principales --- */
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Grid de Plantas */
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.plant-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px); /* Efecto de levantar al pasar el mouse */
+}
+
+.plant-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.plant-card h3 {
+    margin: 15px 0 10px;
+    color: var(--primary-color);
+}
+
+.plant-card p {
+    padding: 0 15px 20px;
+}
+
+/* Lista de Cuidados */
+.care-list li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+/* Formulario */
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    margin-top: 40px;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+/* --- Responsive Design (Móviles) --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
